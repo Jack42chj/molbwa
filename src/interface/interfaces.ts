@@ -66,4 +66,6 @@ export interface MediaProps {
     api_link: string;
     go_link: string;
     createdAt: string;
+    like: number;
+    hate: number;
 }
