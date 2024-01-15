@@ -210,8 +210,8 @@ const Media = () => {
                                 </Link>
                             </ItemWrapper>
                         </Row>
-                        <Text>등록일 {videoData[0]?.createdAt}</Text>
-                        <Text>조회수 {videoData[0]?.view}</Text>
+                        <Text className="media-text">등록일 {videoData[0]?.createdAt}</Text>
+                        <Text className="media-text">조회수 {videoData[0]?.view}</Text>
                     </TextWrapper>
                 </>
             )}
