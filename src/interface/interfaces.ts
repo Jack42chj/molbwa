@@ -62,10 +62,10 @@ export interface AllDataProps {
 //동영상 재생 화면
 export interface MediaProps {
     title: string;
-    view: string;
     api_link: string;
     go_link: string;
     createdAt: string;
+    view: number;
     like: number;
     hate: number;
 }

@@ -80,6 +80,7 @@ const Media = () => {
     const navigate = useNavigate();
     const { isLoggedIn } = AuthStore();
     const [isLoading, setLoading] = useState(false);
+    const [viewCounted, setViewCounted] = useState(false);
     const [videoData, setVideoData] = useState<MediaProps[]>([]);
     const getVideoData = async () => {
         try {
@@ -98,12 +99,34 @@ const Media = () => {
             alert("영상 데이터 불러오기 실패!");
         }
     };
+    const increaseView = async () => {
+        if (isLoading) {
+            const { error } = await supabase
+            .from('molbwa')
+            .update({ 'view': videoData[0].view + 1 })
+            .eq('title', props.state);
+            if (error) {
+                window.alert('서버와 연결에 실패하였습니다.');
+            }
+        }
+    };
     useEffect(() => {
         getVideoData();
         setTimeout(() => {
             setLoading(true);
         }, 800);
     }, []);
+    useEffect(() => {
+        if (isLoading) {
+            const timer = setTimeout(() => {
+                if (!viewCounted) {
+                    increaseView();
+                    setViewCounted(true);
+                }
+            }, 6000);
+            return () => clearTimeout(timer);
+        }
+    }, [isLoading, viewCounted]);
     const onClickLike = async () => {
         if (isLoggedIn) {
             const { error } = await supabase
@@ -112,7 +135,7 @@ const Media = () => {
                 .eq('title', props.state);
 
             if (error) {
-                window.alert('서버와 연결의 실패하였습니다.');
+                window.alert('서버와 연결에 실패하였습니다.');
             } else {
                 getVideoData();
             }
@@ -132,7 +155,7 @@ const Media = () => {
             .eq('title', props.state);
 
             if (error) {
-                window.alert('서버와 연결의 실패하였습니다.');
+                window.alert('서버와 연결에 실패하였습니다.');
             } else {
                 getVideoData();
             }
