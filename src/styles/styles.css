@@ -44,7 +44,7 @@
             height: auto;
         }
     }
-    .title {
+    .media-title {
         font-size: 20px !important;
     }
     .media-text {
@@ -92,7 +92,7 @@
     .media-text {
         font-size: 12px !important;
     }
-    .title {
+    .media-title {
         font-size: 12px !important;
     }
     .icon-btn {

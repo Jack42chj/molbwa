@@ -22,7 +22,7 @@ const TextWrapper = styled.div`
 
 const Text = styled.span`
     font-size: 18px;
-    &.title {
+    &.media-title {
         font-size: 24px;
     }
 `;
@@ -186,7 +186,7 @@ const Media = () => {
                     </VideoContainer>
                     <TextWrapper>
                         <Row>
-                            <Text className="title">{videoData[0]?.title}</Text>
+                            <Text className="media-title">{videoData[0]?.title}</Text>
                             <ItemWrapper>
                                 <Item className="icon-btn" onClick={onClickLike}>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
