@@ -51,7 +51,6 @@ const SearchBar = () => {
         e.preventDefault();
         if (keyword === "") return;
         navigate(`/search/${keyword}`, { state: keyword });
-        window.location.reload();
     };
     return(
         <Wrapper>

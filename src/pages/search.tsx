@@ -44,13 +44,14 @@ const Keyword = styled.span`
 
 const Search = () => {
     const props = useLocation();
+    const keyword = props.state;
     const [isLoading, setLoading] = useState(false);
     const [searchData, setSearchData] = useState<SearchDataProps[]>([]);
     const getSearchData = async () => {
         const { data, error } = await supabase
             .from('molbwa')
             .select(`title, view, thumb_img, createdAt, description`)
-            .ilike('title', `%${props.state}%`);
+            .ilike('title', `%${keyword}%`);
         if (error) {
             console.error(error);
             return;
@@ -60,11 +61,11 @@ const Search = () => {
         }
     };
     useEffect(() => {
-        getSearchData();
+        if(keyword !== '') getSearchData();
         setTimeout(() => {
             setLoading(true);
         }, 800);
-    }, []);
+    }, [keyword]);
     return(
         <Wrapper>
             <Header />

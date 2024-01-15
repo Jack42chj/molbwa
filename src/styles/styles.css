@@ -51,6 +51,12 @@
     .best-all-desc{
         font-size: 12px !important;
     }
+    .not-found-img{
+        width: 80% !important;
+    }
+    .not-found-text{
+        font-size: 22px !important;
+    }
 } 
 
 /* 모바일 세로 (해상도 ~ 479px)*/ 
@@ -94,5 +100,14 @@
     }
     .best-all-desc{
         font-size: 12px !important;
+    }
+    .not-found-img{
+        width: 80% !important;
+    }
+    .not-found-text{
+        font-size: 14px !important;
+    }
+    .not-found-btn{
+        font-size: 14px !important;
     }
 }

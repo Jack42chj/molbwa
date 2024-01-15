@@ -76,7 +76,6 @@ const SearchModal : React.FC<ModalProps> = ({ isOpen, closeModal }) => {
         if (keyword === "") return;
         closeModal();
         navigate(`/search/${keyword}`, { state: keyword });
-        window.location.reload();
     };
     const onClick = () => {
         setKeyword("");

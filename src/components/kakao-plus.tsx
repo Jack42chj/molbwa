@@ -2,25 +2,25 @@ import styled from "styled-components";
 import KakaoQR from "../assets/qr/kakao-qr.png";
 
 const Wrapper = styled.div`
-    width: 100%;
+    width: 90%;
     background-color: #FEE500;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 20px 0px;
+    padding: 20px 0px 10px 0px;
     border: none;
     border-radius: 3px;
 `;
 
 const Text = styled.span`
-    font-size: 22px;
+    font-size: 20px;
     color: #000000;
     &.description {
-        font-size: 14px;
+        font-size: 12px;
     }
     &.method {
-        font-size: 18px;
+        font-size: 16px;
     }
 `;
 
@@ -51,7 +51,7 @@ const Row = styled.div`
 
 const QrImage = styled.div`
     img {
-        width: 120px;
+        width: 100px;
         height: auto;
         border-radius: 5px;
     }
@@ -61,14 +61,14 @@ const Icon = styled.div`
     background-color: #FFF;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     margin-bottom: 20px;
     svg {
         transform: translate(10px, 10px);
         color: #000000;
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
     }
 `;
 
@@ -76,7 +76,7 @@ const IconText = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70px;
+    width: 58px;
 `;
 
 const KakaoPlus = () => {

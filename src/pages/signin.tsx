@@ -24,7 +24,7 @@ const GoogleBtn = styled.span`
     border: 2px solid #747775;
     color: #494949;
     font-size: 18px;
-    width: 100%;
+    width: 80%;
     padding: 5px 0px;
     border-radius: 5px;
     display: flex;

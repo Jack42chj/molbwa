@@ -10,6 +10,7 @@ const Search = lazy(() => import("./pages/search"));
 const Best = lazy(() => import("./pages/best"));
 const All = lazy(() => import("./pages/all"));
 const SignIn = lazy(() => import("./pages/signin"));
+const NotFound = lazy(() => import("./pages/notfound"));
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/search/:text",
     element: <Suspense><ScrollTop /><Search /></Suspense>
+  },
+  {
+    path: "/*",
+    element: <Suspense><ScrollTop /><NotFound /></Suspense>
   }
 ]);
 

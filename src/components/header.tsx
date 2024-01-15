@@ -44,11 +44,14 @@ const LoginBtn = styled.button`
 
 const Row = styled.div`
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 50px;
-    &.login-search {
-        gap: 30px
-    }
+`;
+
+const SearchRow = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 30px;
 `;
 
 const SearchBtn = styled.span`
@@ -86,7 +89,7 @@ const Header = () => {
                 <Item className="header-best" onClick={onClickBest}>전체 영상</Item>
             </Row>
             <SearchBar />
-            <Row className="login-search">
+            <SearchRow className="login-search">
                 <SearchBtn className="search-icon-btn" onClick={openModal}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -99,7 +102,7 @@ const Header = () => {
                 ) : (
                     <LoginBtn onClick={SignOut}>로그아웃</LoginBtn>
                 )}
-            </Row>
+            </SearchRow>
             <SearchModal isOpen={isOpen} closeModal={closeModal}/>
         </Wrapper>
     );
