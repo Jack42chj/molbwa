@@ -8,6 +8,7 @@ import BestVideo from "../components/best-video";
 const Wrapper = styled.div`
     max-width: 1250px;
     width: 100%;
+    padding: 0px 10px;
 `;
 
 const Home = () => {

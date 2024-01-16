@@ -17,26 +17,23 @@ const Wrapper = styled.div`
 const Logo = styled.span`
     cursor: pointer;
     font-size: 32px;
-    height: 32px;
 `;
 
 const Item = styled.span`
     cursor: pointer;
     font-size: 24px;
     font-family: 'BMJUA';
-    height: 24px;
 `;
 
 const LoginBtn = styled.button`
     cursor: pointer;
-    height: 32px;
     font-family: 'BMJUA';
     font-size: 18px;
     background-color: transparent;
     color: #EEEEEE;
     border: 1px solid #EEEEEE;
     border-radius: 5px;
-    padding: 0px 10px;
+    padding: 6px 10px;
     &:hover {
         border: 1px solid #494949;
     }
@@ -44,7 +41,7 @@ const LoginBtn = styled.button`
 
 const Row = styled.div`
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 50px;
 `;
 
@@ -97,10 +94,10 @@ const Header = () => {
                 </SearchBtn>
                 {isLoggedIn === false ? (
                     <Link to="/login" style={{textDecoration: "none", color: "#fff"}}>
-                        <LoginBtn>로그인</LoginBtn>
+                        <LoginBtn className="auth-btn">로그인</LoginBtn>
                     </Link>
                 ) : (
-                    <LoginBtn onClick={SignOut}>로그아웃</LoginBtn>
+                    <LoginBtn className="auth-btn" onClick={SignOut}>로그아웃</LoginBtn>
                 )}
             </SearchRow>
             <SearchModal isOpen={isOpen} closeModal={closeModal}/>

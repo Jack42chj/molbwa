@@ -10,6 +10,7 @@ import AllSkeleton from "../components/skeleton/all-skeleton";
 const Wrapper = styled.div`
     max-width: 1250px;
     width: 100%;
+    padding: 0px 10px;
 `;
 
 const Title = styled.span`
