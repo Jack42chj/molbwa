@@ -68,6 +68,8 @@ const Description = styled.span`
     color: #fff;
     font-size: 16px;
     font-family: 'BMJUA';
+    height: 16px;
+    overflow: hidden;
 `;
 
 const MoveBtn = styled.button`
@@ -149,7 +151,7 @@ const Slider = () => {
                     data.map((item) => (
                         <ItemWrapper key={item.title} onClick={() => onClickItem(item.title)}>
                             <Item>
-                                <img src={item.poster_img} alt={`image_${item.title}`} fetchpriority="high" width='224' height='336' />
+                                <img src={item.poster_img} alt={`image_${item.title}`} title={`${item.title}`} fetchpriority="high" width='224' height='336' />
                             </Item>
                             <Description>{item.title}</Description>
                             <Description>{item.category}</Description>

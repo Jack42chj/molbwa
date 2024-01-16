@@ -53,7 +53,7 @@ const Item = styled.div`
 
 const Description = styled.span`
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'BMJUA';
 `;
 
@@ -91,7 +91,7 @@ const Best = () => {
                 data.map((item, i) => (
                     <ItemWrapper key={i} onClick={() => onClickItem(item.title)}>
                         <Item>
-                            <img src={item.poster_img} width='282' height='403'/>
+                            <img src={item.poster_img} title={`${item.title}`} alt={`${item.title}`} width='282' height='403'/>
                         </Item>
                         <Description className="best-all-desc">{item.title}</Description>
                         <Description className="best-all-desc">조회수 {item.view}</Description>

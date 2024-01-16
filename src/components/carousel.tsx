@@ -124,7 +124,7 @@ const Carousel = () => {
                             {data.map((item) => (
                                 <Item key={item.title}>
                                     <Link to={`media/${item.title}`} state={item.title}>
-                                        <img src={item.thumb_img} alt={`image_${item.title}`} fetchpriority="high" width='595' height='334' />
+                                        <img src={item.thumb_img} alt={`image_${item.title}`} title={`${item.title}`} fetchpriority="high" width='595' height='334' />
                                     </Link>
                                 </Item>
                             ))}

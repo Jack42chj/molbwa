@@ -54,7 +54,7 @@ const SearchList : React.FC<SearchProps> = ({ isLoading, dataList }) => {
         ) : (
             dataList.map((item, i) => (
                 <Container className="search-list" key={i} onClick={() => onClickItem(item.title)}>
-                    <ItemImage className="search-img"><img src={item.thumb_img} fetchpriority="high" width='595' height='334'/></ItemImage>
+                    <ItemImage className="search-img"><img src={item.thumb_img} title={`${item.title}`} alt={`image_${item.title}`} fetchpriority="high" width='595' height='334'/></ItemImage>
                     <ItemContent>
                         <Item className="title">{item.title}</Item>
                         <Item>조회수 {item.view}</Item>
