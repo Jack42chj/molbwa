@@ -74,7 +74,6 @@ const Header = () => {
             alert("로그아웃 되었습니다.");
             logout();
             window.location.reload();
-            navigate('/');
         } else {
             console.error(error);
         }

@@ -57,11 +57,11 @@ const GlobalStyles = createGlobalStyle`
     width: 8px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #B0B0B0; /* 스크롤바 색상 */
-    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+    background: #B0B0B0;
+    border-radius: 10px;
   }
   &::-webkit-scrollbar-track {
-    background: rgba(0, 173, 181, 0.1);  /*스크롤바 뒷 배경 색상*/
+    background: rgba(0, 173, 181, 0.1);
   }
 `;
 
