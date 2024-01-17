@@ -73,6 +73,7 @@ const Header = () => {
         if (!error) {
             alert("로그아웃 되었습니다.");
             logout();
+            navigate('/');
             window.location.reload();
         } else {
             console.error(error);
