@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     element: <Suspense><ScrollTop /><Search /></Suspense>
   },
   {
-    path: "*",
+    path: "/*",
     element: <Suspense><ScrollTop /><NotFound /></Suspense>
   }
 ]);
