@@ -19,7 +19,7 @@ const Footer = () => {
     return(
         <Wrapper>
             <Text>몰봐?! 서비스의 모든 영상 저작권은 Youtube에 있습니다.</Text>
-            <Text>이메일 : gildong123@kw.ac.kr</Text>
+            <Text>이메일 : 42city@naver.com</Text>
             <Text>Copyright &copy; 몰봐?! All right reserved.</Text>
         </Wrapper>
     );
