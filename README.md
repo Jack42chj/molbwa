@@ -1,30 +1,96 @@
-# React + TypeScript + Vite
+# Molbwa
+> **유투브 국내 드라마 결말까지 몰아보기를 모아놓은 웹/앱 서비스**
+![logo](https://github.com/Jack42chj/molbwa/assets/86552441/7d9f1c10-4a33-41b6-93d6-16fd2c5ebd83)
+- - -
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## ⚙️ 요구 사항(Requirements)
+> - Node.js 20.11.1
+> - yarn 1.22.21
+- - -
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## 💡 실행 방법(Installation)
+```bash
+$ cd molbwa
+$ yarn
+$ yan dev
 ```
+- - -
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## 🖥️ 서비스 소개(Introduction)
+> **결말이 포함된 국내 드라마 요약 유투브를 모아놓은 영상 스트리밍 서비스입니다.**
+![sample](https://github.com/Jack42chj/molbwa/assets/86552441/54e90f6a-ad89-4b21-ae0e-673fef2d8241)
+- - -
+
+
+## 🔗 배포 바로가기(Deployment)
+<https://molbwa.vercel.app>
+- - -
+
+
+## 🗓️ 개발 기간(Development Period)
+> **2023.12.21 ~ 2024.02.24**
+- - -
+
+
+## 🙋‍♂️ 멤버 구성(Member)
+> **1인 기획, 디자인, 개발**
+- - -
+
+
+## 📚 기술 스택(Stacks)
+### 🛣️ 개발 환경(Environment)
+<div>
+  <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+  <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+</div>
+
+### 💫 Config
+<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white">
+
+
+### 🛠️ 개발 기술(Development)
+<div>
+  <img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white">
+  <img src="https://img.shields.io/badge/Zustand-696969?style=for-the-badge&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white">
+  <img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white">
+</div>
+
+
+### 🪄 디자인(Design)
+<div>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+</div>
+
+### 🪄 배포(Deployment)
+<div>
+  <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
+</div>
+
+- - -
+
+
+## 🌟 주요 기능(Specification)
+#### ▶️ 선택 영상 유튜브 스트리밍(Player)
+- 유튜브 영상 중 국내 드라마 결말포함 몰아보기 영상 제공
+
+#### 🔑 로그인/회원가입(Auth)
+- Supabase Google OAuth2 로그인/회원가입
+- 구글 로그인을 통한 이전에 보던 유튜브 영상 이어보기 가능
+
+#### 🔍 검색 기능(Search)
+- 입력 받은 검색어를 기반으로 DB에서 결과 조회
+- 이전 검색어와 같거나 비어 있으면 검색 요청 안함
+
+#### 📱 카테고리(Category)
+- 영상마다 카테고리를 설정하여 총 8개의 카테고리로 정리
+- 사용자에게 카테고리 별로 영상 제공
+
+#### 🔥 인기순, 조회순, 등록순 영상 제공(Filtering)
+- 인기순, 조회순, 등록순으로 영상들을 필터링을 하여 메인 화면에서 사용자에게 영상 추천
