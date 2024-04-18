@@ -1,6 +1,6 @@
 # Molbwa
 > **유투브 국내 드라마 결말까지 몰아보기를 모아놓은 웹/앱 서비스**
-![logo](https://github.com/Jack42chj/molbwa/assets/86552441/7d9f1c10-4a33-41b6-93d6-16fd2c5ebd83)
+![logo](https://github.com/Jack42chj/molbwa/assets/86552441/735934f3-6d78-4923-a892-440f7030865a)
 - - -
 
 
