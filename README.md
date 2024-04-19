@@ -76,6 +76,78 @@ $ yan dev
 - - -
 
 
+## 📂 디렉토리 구조
+
+```bash
+molbwa-master
+├─ .eslintrc.cjs
+├─ .git
+├─ .gitignore
+├─ index.html
+├─ package.json
+├─ public
+│  ├─ logo.png
+│  ├─ logo.svg
+│  └─ robots.txt
+├─ README.md
+├─ src
+│  ├─ App.tsx
+│  ├─ assets
+│  │  ├─ error
+│  │  │  ├─ 404found.webp
+│  │  │  └─ error.webp
+│  │  ├─ fonts
+│  │  │  ├─ BMJUA_ttf.ttf
+│  │  │  └─ font.css
+│  │  └─ qr
+│  │     └─ kakao-qr.png
+│  ├─ components
+│  │  ├─ best-video.tsx
+│  │  ├─ carousel.tsx
+│  │  ├─ footer.tsx
+│  │  ├─ header.tsx
+│  │  ├─ kakao-plus.tsx
+│  │  ├─ scroll-top.tsx
+│  │  ├─ search-bar.tsx
+│  │  ├─ search-list.tsx
+│  │  ├─ search-modal.tsx
+│  │  ├─ skeleton
+│  │  │  ├─ all-skeleton.tsx
+│  │  │  ├─ best-skeleton.tsx
+│  │  │  ├─ best-video-skeleton.tsx
+│  │  │  ├─ carousel-skeleton.tsx
+│  │  │  ├─ media-skeleton.tsx
+│  │  │  ├─ search-list-skeleton.tsx
+│  │  │  └─ slider-skeleton.tsx
+│  │  └─ slider.tsx
+│  ├─ custom.d.ts
+│  ├─ interface
+│  │  └─ interfaces.ts
+│  ├─ main.tsx
+│  ├─ pages
+│  │  ├─ all.tsx
+│  │  ├─ best.tsx
+│  │  ├─ home.tsx
+│  │  ├─ media.tsx
+│  │  ├─ notfound.tsx
+│  │  ├─ search.tsx
+│  │  └─ signin.tsx
+│  ├─ styles
+│  │  └─ styles.css
+│  ├─ supabase
+│  │  └─ supabase.tsx
+│  ├─ vite-env.d.ts
+│  └─ zustand
+│     └─ store.ts
+├─ tsconfig.json
+├─ tsconfig.node.json
+├─ vercel.json
+├─ vite.config.ts
+└─ yarn.lock
+
+```
+
+
 ## 🌟 주요 기능(Specification)
 #### ▶️ 선택 영상 유튜브 스트리밍(Player)
 - 유튜브 영상 중 국내 드라마 결말포함 몰아보기 영상 제공
