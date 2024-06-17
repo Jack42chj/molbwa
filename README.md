@@ -147,6 +147,11 @@ molbwa-master
 
 ```
 
+## ⚡ 웹 페이지 속도 측정(렌더링 속도)
+
+![render](https://github.com/Jack42chj/molbwa/assets/86552441/6371f0ee-fa69-40c7-af35-461b35e051b1)
+
+https://tools.pingdom.com/
 
 ## 🌟 주요 기능(Specification)
 #### ▶️ 선택 영상 유튜브 스트리밍(Player)
